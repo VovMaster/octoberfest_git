@@ -1218,6 +1218,7 @@ h6,
   overflow: hidden;
   position: relative;
   min-height: 78px;
+  margin-bottom: 26px;
 }
 .audio-wrap:after {
   content: " ";
@@ -1667,6 +1668,9 @@ img {
 .wrap-columns h3:first-child {
   margin-top: -10px;
 }
+.wrap-columns p:last-child {
+  margin-bottom: 0;
+}
 .text-column {
   width: 50%;
   float: right;
@@ -1843,20 +1847,32 @@ img {
   background: transparent;
   color: #fff;
 }
-.wrap-columns2 .text-column {
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 0;
-}
-.wrap-columns2 p {
-  margin-bottom: 27px;
-}
 .wrap-columns2 h3 {
   font-family: 'gotham_htfblack';
   font-weight: normal;
   color: #fff;
   letter-spacing: 0.14em;
   margin-bottom: 24px;
+}
+.wrap-columns2 .columns:first-child .text-column {
+  padding-top: 0;
+}
+.wrap-columns2 .columns:first-child .text-column h3:first-child {
+  margin-top: -7px;
+}
+.wrap-columns2 p {
+  margin-bottom: 35px;
+}
+.wrap-columns2 .text-column {
+  line-height: 36px;
+}
+.wrap-columns2 .text-small {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+.wrap-columns2 .text-small p {
+  margin-bottom: 27px;
 }
 .section-style-bottom {
   padding-bottom: 0;

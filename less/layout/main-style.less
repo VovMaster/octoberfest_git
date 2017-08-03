@@ -133,6 +133,9 @@ img{
 	h3:first-child {
 		margin-top: -10px;
 	}
+	p:last-child {
+		margin-bottom: 0;
+	}
 }
 .text-column{
 	width: 50%;
@@ -323,14 +326,6 @@ img{
 .wrap-columns2 {
 	background: transparent;
 	color: #fff;
-	.text-column {
-		font-size: 16px;
-		line-height: 28px;
-		letter-spacing: 0;
-	}
-	p {
-		margin-bottom: 27px;
-	}
 	h3 {
 		font-family: 'gotham_htfblack';
 		font-weight: normal;
@@ -338,7 +333,31 @@ img{
 		letter-spacing: 0.14em;
 		margin-bottom: 24px;
 	}
+
+	.columns:first-child .text-column {
+		padding-top: 0;
+		h3:first-child {
+			margin-top: -7px;
+		}
+	}
+	p {
+		margin-bottom: 35px;
+	}
+	.text-column {
+		line-height: 36px;
+	}
+
+	.text-small {
+		font-size: 16px;
+		line-height: 28px;
+		letter-spacing: 0;
+		p {
+			margin-bottom: 27px;
+		}
+	}
+
 }
+
 .section-style-bottom {
 	padding-bottom: 0;
 }
@@ -410,3 +429,4 @@ img{
 		padding: 15px;
 	}
 }
+

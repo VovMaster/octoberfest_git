@@ -1105,6 +1105,10 @@ h6,
 }
 .wrap-btn {
   text-align: center;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
 }
 .btn {
   font-family: 'Fira Sans';
@@ -1171,8 +1175,12 @@ h6,
   border-radius: 4px;
 }
 .btn2 {
+  border-radius: 30px;
+  font-family: "gotham_htfblack";
   font-size: 14px;
-  font-family: 'gotham_htfblack';
+  font-weight: normal;
+  letter-spacing: 0.14em;
+  padding: 14px 31px;
 }
 .btn-green {
   background: #2c4d19;
@@ -1399,9 +1407,10 @@ img {
   font-weight: 600;
 }
 .gallery {
-  padding: 31px 24px 36px;
+  padding: 28px 24px 36px;
   background-color: #15270a;
   position: relative;
+  margin-top: 75px;
 }
 .gallery ul {
   padding: 0;
@@ -1431,21 +1440,6 @@ img {
   bottom: 0;
   right: 0;
   top: 0;
-}
-.centering {
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-.centering:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-}
-.centering > div {
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
 }
 .section-accordion {
   max-width: 980px;
@@ -1522,6 +1516,10 @@ img {
   font-weight: 700;
   margin-bottom: 0;
   margin-top: 0;
+  font-size: 31px;
+}
+.title h5 + h2 {
+  margin-top: -6px;
 }
 .title h2 {
   margin-top: -3px;
@@ -1534,4 +1532,14 @@ img {
 }
 .section-die-deets p {
   line-height: 36px;
+  margin-bottom: 26px;
+}
+.section-die-deets .title {
+  margin-bottom: 0;
+}
+.section-the-kultur-of {
+  padding-top: 26px;
+}
+.section-the-kultur-of .title {
+  margin-bottom: 80px;
 }

@@ -98,9 +98,10 @@ img{
 	}
 }
 .gallery{
-	padding: 31px 24px 36px;
+	padding: 28px 24px 36px;
 	background-color: @green-dark;
 	position: relative;
+	margin-top: 75px;
 	ul{
 		padding: 0;
 		margin-left: -3px;
@@ -131,23 +132,6 @@ img{
 	right: 0;
 	top: 0;
 }
-.centering{
-	display: inline-block;
-	vertical-align: middle;
-	height: 100%;
-	&:after{
-		content: "";
-		display: inline-block;
-		vertical-align: middle;
-	}
-	> div{
-		display: inline-block;
-		vertical-align: middle;
-		height: 100%;
-
-	}
-}
-
 
 
 
@@ -229,6 +213,10 @@ img{
 		font-weight: 700;
 		margin-bottom: 0;
 		margin-top: 0;
+		font-size: 31px;
+		+ h2 {
+			margin-top: -6px;
+		}
 	}
 	h2 {
 		margin-top: -3px;
@@ -245,5 +233,16 @@ img{
 .section-die-deets {
 	p {
 		line-height: 36px;
+		margin-bottom: 26px;
+	}
+	.title {
+		margin-bottom: 0;
+	}
+}
+
+.section-the-kultur-of {
+	padding-top: 26px;
+	.title {
+		margin-bottom: 80px;
 	}
 }

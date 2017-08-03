@@ -1,0 +1,74 @@
+.main-header{
+	padding: 20px 0 27px;
+	.main-width {
+		position: relative;
+	}
+}
+.logo{
+	left: 56px;
+	position: absolute;
+	top: 23px;
+}
+.main-nav{
+	margin-right: -7px;
+	text-align: right;
+	font-family: 'gotham_htfblack';
+	font-weight: normal;
+	letter-spacing: 0.025em;
+	ul{
+		margin-bottom: 0;
+		list-style: none;
+		padding: 0;
+		li{
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 39px;
+			&.current{
+				a{
+					color: @green;
+				}
+			}
+			a{
+				color: @white;
+				display: block;
+				text-transform: uppercase;
+				font-size: 15px;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.socials {
+	padding: 0;
+	margin: 0 -7px 25px 0;
+	list-style: none;
+	text-align: right;
+	li {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 16px;
+		a {
+			display: block;
+			background-image: url(../images/socials.png);
+			background-repeat: no-repeat;
+			height: 32px;
+			width: 34px;
+		}
+	}
+	.facebook {
+		a {
+			background-position: -4px -46px;
+		}
+	}
+	.instagram {
+		a {
+			background-position: -60px -46px;
+		}
+	}
+	.socials3 {
+		a {
+			background-position: -115px -46px;
+		}
+	}
+}

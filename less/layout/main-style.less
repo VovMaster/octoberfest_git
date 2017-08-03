@@ -18,7 +18,7 @@ p, ul, ol {
 	}
 }
 .main-width {
-	max-width: 1400px;
+	max-width: 1280px;
 	margin: auto;
 	padding: 0 60px;
 }
@@ -66,7 +66,10 @@ img{
 	}
 }
 
-
+.section-style {
+	padding-top: 54px;
+	padding-bottom: 69px;
+}
 
 .submenu{
 	background-color: @green-dark;
@@ -117,27 +120,61 @@ img{
 			}
 		}
 	}
+	.main-width {
+		padding: 0;
+	}
 }
-.columns{
-	position: relative;
-	> div{
-		width: 50%;
-		float: left;
+.wrap-columns {
+	background-color: @gray-light;
+	.main-width {
+		padding: 0;
 	}
 }
 .text-column{
-	background-color: @gray-light;
+	width: 50%;
+	float: right;
+	padding: 82px 69px 74px;
+	line-height: 29px;
+}
+.img-column {
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	width: 50%;
 	top: 0;
+	left: 0;
+	overflow: hidden;
+	bottom: 0;
+	img {
+		max-width: 500%;
+		min-width: 100%;
+		min-height: 100%;
+	}
+}
+
+.columns{
+	position: relative;
+	overflow: hidden;
+	&:nth-child(2n) {
+		.text-column {
+			float: left;
+		}
+		.img-column {
+			left: auto;
+			right: 0;
+		}
+	}
 }
 
 
-
 .section-accordion{
-	max-width: 980px;
+	background: #fff;
+	padding-top: 76px;
+	.title {
+		margin-bottom: 64px;
+	}
+}
+.accordion-conteiner {
 	margin: auto;
+	max-width: 980px;
 }
 .accordion{
 	margin-bottom: 13px;
@@ -148,6 +185,11 @@ img{
 		.head-accordion{
 			background-color: @yellow;
 		}
+		.symbol{
+			&:before{
+				display: none;
+			}
+		}
 	}
 }
 .head-accordion{
@@ -157,19 +199,16 @@ img{
 	text-decoration: none;
 	background-color: @green;
 	color: @white;
-	padding: 8px 28px;
+	padding: 8px 27px 3px;
 	position: relative;
-	&:hover{
+	&:hover, &:focus {
 		color: @white;
 	}
 }
 .content-accordion{
-	padding: 20px 28px;
+	padding: 32px 27px 23px;
 	border: 1px solid #cccccc;
 	display: none;
-	p{
-		margin-bottom: 7px;
-	}
 }
 .symbol{
 	position: absolute;
@@ -196,16 +235,8 @@ img{
 		left: 50%;
 		margin-left: -1px;
 	}
-	&.close{
-		&:before{
-			display: none;
-		}
-	}
 }
-.section-style {
-	padding-top: 54px;
-	padding-bottom: 69px;
-}
+
 .title {
 	text-align: center;
 	margin-bottom: 41px;
@@ -242,7 +273,19 @@ img{
 
 .section-the-kultur-of {
 	padding-top: 26px;
+	padding-bottom: 0;
 	.title {
 		margin-bottom: 80px;
+	}
+}
+.accordion-text-style {
+	max-width: 980px;
+	margin: auto;
+	padding: 1px 27px;
+	margin-bottom: 11px;
+	h5 {
+		font-family: 'Fira Sans';
+		font-weight: 700;
+		margin-bottom: 4px;
 	}
 }

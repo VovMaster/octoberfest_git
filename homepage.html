@@ -7,7 +7,11 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i,900,900i|Fira+Sans:300,300i,400,400i,500,500i,700,700i" rel="stylesheet"> 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/audio.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLqTJvh2boN6LSXcp23GrAwFYFB0D--DI&callback=initMap"></script>
 	</head>
 <body>
 	<div class="wrapper">
@@ -54,215 +58,248 @@
 
 			</div>
 		</header>
-		<section class="section-style text-white text-center" style="background-image: url(images/bg-large.png);">
+		<section class="section-style text-white text-center octroberfest-top">
 			<div class="main-width">
-				<div>
+				<div class="octroberfest-canberra-img">
 					<img src="images/octroberfest-canberra.png" alt="">
-					<p>Midday Sat 14 October<br>Patrick White Parklands</p>
-					<img src="images/cheers.png" alt="">
-					<form class="form-arrow">
-						<input class="form-control" placeholder="Your e-mail here" type="text">
-						<button type="submit"></button>
-					</form>
 				</div>
+				<div class="octroberfest-text">
+					<p>12pm - 10pm Sat 14 October PATRICK WHITE PARKLANDS, PARKES</p>
+					<p><a href="" class="down"></a></p>
+				</div>
+				<div class="cheers-img">
+					<img src="images/cheers.png" alt="">
+				</div>
+				<form class="form-arrow form-arrow-big">
+					<input class="form-control" placeholder="E-mail sign up here" type="text">
+					<button type="submit"></button>
+				</form>
+			</div>
+			<div class="bg-large-img">
+				<img src="images/bg-large.png">
 			</div>
 		</section>
-		<section class="section-style text-center">
+		<section class="section-style text-center featuring-index">
 			<div class="main-width">
-				<div class="title">
-			 		<h2>FEATURING</h2>
-			 	</div>
-			 	<ul>
-			 		<li>
-			 			<a href="">Craft Beer Halls</a>
-			 		</li>
-			 		<li>
-			 			<a href="">Bavarian Food Truck Village</a>
-			 		</li>
-			 		<li>
-			 			<a href="">Oompah Bands</a>
-			 		</li>
-			 		<li>
-			 			<a href="">DJS</a>
-			 		</li>
-			 		<li>
-			 			<a href="">German Wines</a>
-			 		</li>
-			 		<li>
-			 			<a href="">Traditional DanceRS</a>
-			 		</li>
-			 		<li>
+			 	<h5>FEATURING</h5>
+			 	<div class="featuring-item">
+			 		<div>
+		 				<a href="">Craft Beer Halls</a>
+		 				<a href="">Bavarian Food Truck Village</a>
+		 				<a href="">Oompah Bands</a>
+					</div>
+					<div>
+		 				<a href="">DJS</a>
+		 				<a href="">German Wines</a>
+		 				<a href="">Traditional DanceRS</a> 
+		 			</div>
+		 			<div>
 			 			<a href="">Side Show Alley</a>
-			 		</li>
-			 		<li>
-			 			<a href="">Dress up competitions</a>
-			 		</li>
-			 	</ul>
-			 	<div>
+		 				<a href="">Dress up competitions</a>
+		 			</div>
+
+			 	</div>
+			 	<div class="wrap-video">
 			 		<img src="images/video-image.jpg" alt="">
-			 		<p>
-			 			<div>Watch the video</div>
-						from the festival
-			 		</p>
+			 		<a class="text-video video-link" data-youtobe="B-rnM-MwRHY">
+			 			<div class="text-video-title">Watch the video</div>
+						<div class="text-video-p">from the festival</div>
+			 		</a>
 			 	</div>
 		 	</div>
 		</section> 
 
 
-		<section class="section-style">
+		<section class="section-style section-dress-up-index">
 	 		<div class="main-width">
 		 		<div class="title">
-		 			<h5>HOW TO</h5>
 			 		<h2>DRESS UP</h2>
 			 	</div>
-			 	<p>
-			 		<b>Male dress up:</b> the boat nearly whistled along the diagonal channel, just a page torn from the Classified section of the Derry News, but now George imagined it as a PT boat in a war movie, like the ones he sometimes saw down at the Derry Theater with Bill at Saturday matinees. 
-			 	</p>
-			 	<p>
-			 		<b>Female dress up:</b> a war picture with John Wayne fighting the Japs. The prow of the newspaper boat threw sprays of water to either side as it rushed along, and then it reached the gutter on the left side of Witcham Street. Like the ones he sometimes saw down at the Derry Theater with Bill at Saturday
-			 	</p>
-			 	<p>
-					<a class="btn btn-green btn2" href="">MORE INFO</a>
-				</p>
-			 	<img src="images/man-cloud.png" alt="">
-			 	<img src="images/woman-cloud.png" alt="">
-		 	</div>
-		 	<div class="wrap-columns">
-		 		<div class="main-width">
-				 	<div class="columns clearfix">
-				 		<div class="img-column">
-				 			<img src="images/homepage-image.jpg" alt="">
-				 		</div>
-				 		<div class="text-column">
-				 			<h3>BOOK A BEER CARRIER</h3>
-				 			<p>Upgrade your Oktoberfest In The Park experience with a Beer carrier! They can reserve you a table, order and deliver you food and drinks. They’re fast, strong, and have the quickest access to our Craft Beer Halls &amp; Food Truck Village.</p>
-				 			<p>
-								<a class="btn btn-green btn2" href="">read more</a>
-							</p>
-				 		</div>
-				 	</div>
-				 	<div class="columns clearfix">
-				 		<div class="img-column">
-				 			<img src="images/homepage-image-2.jpg" alt="">
-				 		</div>
-				 		<div class="text-column">
-				 			<h3>BECOME THE BRAUMEISTER</h3>
-							<p>One lucky Klaus or Gretl will win the annual Braumeister competition and will be treated like royalty at Oktoberfest In The Park 2017.</p>
-							<p>Beer as a profession, that sounds like a dream come true.. Oktoberfest In The Park needs ein Braumeister to kick off celebrations with the most honourable tradition of Oktoberfest: the tapping of the very first keg!</p>
-							<p><b>Check out the details for the competition here!</b></p>
-							<p>
-								<a class="btn btn-green btn2" href="">read more</a>
-							</p>
-				 		</div>
-				 	</div>
-				 	<div class="columns clearfix">
-				 		<div class="img-column">
-				 			<img src="images/homepage-image-3.jpg" alt="">
-				 		</div>
-				 		<div class="text-column">
-				 			<h3>GET INVOLVED</h3>
-							<p>Want to join the Oktoberfest In The Park family 
-							and make <span>$$$</span> while you celebrate?</p>
-							<p>Contact us at: <a href="">Oktoberfam@kicksentertainment.com.au</a> to find out more.</p>
-							<p>
-								<a class="btn btn-green btn2" href="">read more</a>
-							</p>
-				 		</div>
-				 	</div>
-				 </div>
-			</div>
-		</section>
-		<section class="section-style">
-			<div class="row">
-				<div class="col-sm-8">
-					<img src="images/logo.png" alt="">
-				</div>
-				<div class="col-sm-4">
-					<form>
-						<div class="form-group">
-							<input class="form-control" placeholder="Your address here" type="text">
-						</div>
-						<p>
-							<a class="btn btn-green btn2" href="">GET DIRECTIONS</a>
-						</p>
-					</form>
-				</div>
-			</div>
-		</section>
-
-		<section class="section-style">
-			<div class="main-width">
-				<div class="title">
-					<h4>FOLLOW US ON INSTAGRAM</h4>
-					<h2>@OKTOBERFESTINTHEPARK</h2>
-				</div>
-				<div>
-					<ul>
-						<li><img src="images/slider-image-1.jpg" alt=""></li>
-						<li><img src="images/slider-image-2.jpg" alt=""></li>
-						<li><img src="images/slider-image-3.jpg" alt=""></li>
-						<li><img src="images/slider-image-4.jpg" alt=""></li>
-						<li><img src="images/slider-image-5.jpg" alt=""></li>
-					</ul>
-					<div>
-						<a href=""></a>
-						<a href=""></a>
+				<div class="content-text-img">
+					<p>Dressing up at Oktoberfest in the Park is a must! Macht Spaß! We’ve teamed up <a href="mailto:сostumebox.com.au">сostumebox.com.au</a> so you can don your very best Lederhosen & Dirndl.</p>
+					<p class="big-text">Get 15% off & free express shipping on all orders over $80
+					</p>
+					<p><a href="" class="btn btn2 btn-green">More info</a></p>
+					<div class="img-left-position">
+						<img src="images/man2.png" alt="">
+					</div>
+					<div class="img-right-position">
+						<img src="images/woman2.png" alt="">
 					</div>
 				</div>
-			</div>
+		 	</div>
+		 </section>
+
+		<section class="section-style section-music-index text-white">
+	 		<div class="main-width">
+		 		<div class="title">
+			 		<h2>THE MUSIC</h2>
+			 		<h4>OF OKTOBERFEST</h4>
+			 	</div>
+			 	<div class="row row40">
+			 		<div class="col-sm-6">
+						<p>From Wiesn classics to all-time popular hits and current chart toppers, Oompah bands are known for creating sing-a-long moments!</p>
+						<p class="text-sm">Get yourself prepared and learn the music of Oktoberfest!</p>
+						<p><a href="" class="btn btn2 btn-green">More info</a></p>
+					</div>
+				</div>
+
+		 	</div>
+		 </section>
+
+
+	 	<div class="wrap-columns wrap-columns-index">
+	 		<div class="main-width">
+			 	<div class="columns clearfix">
+			 		<div class="img-column">
+			 			<img src="images/homepage-image.jpg" alt="">
+			 		</div>
+			 		<div class="text-column">
+			 			<h3>BOOK A BEER CARRIER</h3>
+			 			<p>Upgrade your Oktoberfest In The Park experience with a Beer carrier! They can reserve you a table, order and deliver you food and drinks. They’re fast, strong, and have the quickest access to our Craft Beer Halls &amp; Food Truck Village.</p>
+			 			<p>
+							<a class="btn btn-green btn2" href="">read more</a>
+						</p>
+			 		</div>
+			 	</div>
+			 	<div class="columns clearfix">
+			 		<div class="img-column">
+			 			<img src="images/homepage-image-2.jpg" alt="">
+			 		</div>
+			 		<div class="text-column">
+			 			<h3>BECOME THE BRAUMEISTER</h3>
+						<p>One lucky Klaus or Gretl will win the annual Braumeister competition and will be treated like royalty at Oktoberfest In The Park 2017.</p>
+						<p>Beer as a profession, that sounds like a dream come true.. Oktoberfest In The Park needs ein Braumeister to kick off celebrations with the most honourable tradition of Oktoberfest: the tapping of the very first keg!</p>
+						<p><b>Check out the details for the competition here!</b></p>
+						<p>
+							<a class="btn btn-green btn2" href="">read more</a>
+						</p>
+			 		</div>
+			 	</div>
+			 	<div class="columns clearfix">
+			 		<div class="img-column">
+			 			<img src="images/homepage-image-3.jpg" alt="">
+			 		</div>
+			 		<div class="text-column">
+			 			<h3>GET INVOLVED</h3>
+						<p>Want to join the Oktoberfest In The Park family 
+						and make <b class="blue">$$$</b> while you celebrate?</p>
+						<p>Contact us at: <a href="">Oktoberfam@kicksentertainment.com.au</a> to find out more.</p>
+						<p>
+							<a class="btn btn-green btn2" href="">read more</a>
+						</p>
+			 		</div>
+			 	</div>
+			 	<div class="columns clearfix">
+			 		<div class="img-column">
+			 			<img src="images/homepage-image-4.jpg" alt="">
+			 		</div>
+			 		<div class="text-column">
+			 			<h3>ALL ABOUT THE PRE-SALE</h3>
+						<p>Pre-sale tickets are exclusively available to subscribers of Oktoberfest In The Park and will cost you <b class="blue">only $34.95</b>! There is only a limited amount available, so get in quick!</p>
+						<p>General tickets go on sale <b>midday 10 August</b>! All tickets get you entry, a commemorative Beer Stein and your first drink is on us.</p>
+						<p>To access Pre-sale tickets, <br>
+						sign up at <a href="mailto:oktoberfestinthepark.com">oktoberfestinthepark.com</a>.au before <b>9pm 6 Aug</b>.</p>
+						<p><b>Sign up</b> <a href="" class="link-arrow">HERE</a> <br> 
+						<b>Buy your tickets</b> <a href="" class="link-arrow">HERE</a><br>
+						<b>Read our FAQ</b> <a href="" class="link-arrow">HERE</a></p>
+						<p>
+							<a class="btn btn-green btn2" href="">read more</a>
+						</p>
+			 		</div>
+			 	</div>
+			 </div>
+		</div>
+
+		<section class="map-wrap">
+			<div id="map"></div>
+
+			<form class="map-content">
+				<div class="form-group">
+					<input class="form-control" placeholder="Your address here" type="text">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-green btn2" type="submit">GET DIRECTIONS</button>
+				</div>
+			</form>
+	
 		</section>
 
-		<footer class="main-footer">
-			<div class="main-width">
-				
-				<div class="footer-blocks">
-
-					<a href="" class="footer-logo">
-						<img src="images/logo.png" alt="">
-					</a>
-
-					<form class="form-arrow">
-						<input class="form-control" placeholder="Your e-mail here" type="text">
-						<button type="submit"></button>
-					</form>
-
-					<ul class="socials clearfix">
-						<li class="facebook">
-							<a href=""></a>
-						</li>
-		
-						<li class="instagram">
-							<a href=""></a>
-						</li>
-						<li class="socials3">
-							<a href=""></a>
-						</li>
-					</ul>
-
-				</div>
-
-				<div class="footer-blocks-two">
-					<p>Midday Sat 14 October <br> Patrick White Parklands</p>
-
-					<ul class="logos-footer">
-						<li><img src="images/Löwenbräu.png"></li>
-						<li><img src="images/Hoegaarden.png"></li>
-						<li><img src="images/moshtix.png"></li>
-						<li><img src="images/!hit104.7.png"></li>
-						<li><img src="images/Hofbräuhaus.png"></li>
-					</ul>
-
-
-				</div>
-
-			</div>
-			<div class="main-footer-bottom">
+		<div class="footer-index">
+			<section class="section-style section-oktoberfestinthepark">
 				<div class="main-width">
-					<p class="main-footer-bottom-right"><a href="">Terms &amp; Conditions</a>      <a href="">privacy policy</a></p>
-					<p class="main-footer-bottom-left">© 2017 all rights reserved</p>
+					<div class="title">
+						<h4>FOLLOW US ON INSTAGRAM</h4>
+						<h5>@OKTOBERFESTINTHEPARK</h5>
+					</div>
+					<div class="slider">
+						<div class="slide"><img src="images/slider-image-1.jpg" alt=""></div>
+						<div class="slide"><img src="images/slider-image-2.jpg" alt=""></div>
+						<div class="slide"><img src="images/slider-image-3.jpg" alt=""></div>
+						<div class="slide"><img src="images/slider-image-4.jpg" alt=""></div>
+						<div class="slide"><img src="images/slider-image-5.jpg" alt=""></div>
+						<div class="slide"><img src="images/slider-image-1.jpg" alt=""></div>
+						<div class="slide"><img src="images/slider-image-2.jpg" alt=""></div>
+						<div class="slide"><img src="images/slider-image-3.jpg" alt=""></div>
+						<div class="slide"><img src="images/slider-image-4.jpg" alt=""></div>
+						<div class="slide"><img src="images/slider-image-5.jpg" alt=""></div>
+					</div>
 				</div>
-			</div>
-		</footer>
+			</section>
+
+			<footer class="main-footer">
+				<div class="main-width">
+					
+					<div class="footer-blocks">
+
+						<a href="" class="footer-logo">
+							<img src="images/logo.png" alt="">
+						</a>
+
+						<form class="form-arrow">
+							<input class="form-control" placeholder="Your e-mail here" type="text">
+							<button type="submit"></button>
+						</form>
+
+						<ul class="socials clearfix">
+							<li class="facebook">
+								<a href=""></a>
+							</li>
+			
+							<li class="instagram">
+								<a href=""></a>
+							</li>
+							<li class="socials3">
+								<a href=""></a>
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="footer-blocks-two">
+						<p>Midday Sat 14 October <br> Patrick White Parklands</p>
+
+						<ul class="logos-footer">
+							<li><img src="images/Löwenbräu.png"></li>
+							<li><img src="images/Hoegaarden.png"></li>
+							<li><img src="images/moshtix.png"></li>
+							<li><img src="images/!hit104.7.png"></li>
+							<li><img src="images/Hofbräuhaus.png"></li>
+						</ul>
+
+
+					</div>
+
+				</div>
+				<div class="main-footer-bottom">
+					<div class="main-width">
+						<p class="main-footer-bottom-right"><a href="">Terms &amp; Conditions</a>      <a href="">privacy policy</a></p>
+						<p class="main-footer-bottom-left">© 2017 all rights reserved</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
 	</div>
 </body>
 </html>

@@ -2736,3 +2736,21 @@ img {
 .map-content .btn {
   width: 100%;
 }
+.section-contact {
+  text-align: center;
+  color: #fff;
+  line-height: 37px;
+  padding-top: 68px;
+  padding-bottom: 62px;
+}
+.section-contact .title {
+  margin-bottom: 27px;
+}
+@media (min-width: 1280px) {
+  .main-footer,
+  .wrapper,
+  .section-die-deets,
+  .section-the-kultur-of {
+    background-size: 100% auto;
+  }
+}

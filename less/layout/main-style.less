@@ -666,6 +666,10 @@ img{
 	img {
 		margin-bottom: -265px;
 	}
+	> div {
+		margin-left: -1000px;
+		margin-right: -1000px;
+	}
 }
 .down {
 	background-image: url(../images/down.png);
@@ -1030,7 +1034,165 @@ img{
 	}
 }
 @media (min-width: 1280px) {
-	.main-footer, .wrapper, .section-die-deets, .section-the-kultur-of {
+	.main-footer, .wrapper, .section-die-deets, .section-the-kultur-of, .fixed-header {
 		background-size: 100% auto;
+	}
+}
+
+.btn-ticket {
+	background-image: url(../images/btn-bg.png);
+	position: absolute;
+	top: 83px;
+	margin-top: 58px;
+	right: 0;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	height: 53px;
+	width: 249px;
+	padding: 14px 0 14px 38px;
+	z-index: 1000;
+	.transition(0.4s);
+	&:after {
+		content: " ";
+		display: inline-block;
+		vertical-align: top;
+		height: 8px;
+		background-image: url(../images/arrow-white.png);
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		width: 13px;
+		margin-left: 7px;
+		margin-top: 7px;
+	}
+	&:hover, &:focus {
+		color: #fff;
+	}
+}
+
+.btn-ticket.btn-ticket-fixed {
+	position: fixed;
+	margin-top: -140px;
+}
+.btn-ticket.btn-ticket-open {
+	margin-top: 0;
+}
+
+@media (max-width: 1010px) {
+	.main-width {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.btn-ticket {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.btn-ticket-fixed {
+		display: none;
+	}
+	.fixed-header {
+		display: none;
+	}
+	.btn-ticket {
+		position: fixed;
+		bottom: 10px;
+		right: 0;
+		top: auto;
+	}
+	.main-header .main-nav {
+		padding-top: 75px;
+	}
+	.main-header .socials {
+		left: 50%;
+		right: auto;
+		margin-left: -28px;
+		top: 18px;
+	}
+	.main-header .socials li {
+		display: block;
+		float: left;
+	}
+	.main-header .socials li:first-child {
+		margin-left: 0;
+	}
+	.main-nav-btn {
+		position: absolute;
+		padding: 24px;
+		width: 70px;
+		top: 0;
+		right: 0;
+		z-index: 2;
+		cursor: pointer;
+		> div {
+			height: 2px;
+			margin: 4px 0;
+			background: #fff;
+		}
+	}
+	.main-header .logo {
+		top: 10px;
+	}
+	.main-header {
+		height: 70px;
+		padding: 20px 0;
+		position: relative;
+		z-index: 1001;
+	}
+	.main-header .main-nav {
+		padding: 30px 0;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		display: none;
+		background: #40d5fd;
+		box-shadow: 0 5px 5px #13526b;
+	}
+	.main-nav ul li {
+		float: none;
+		margin: 0;
+		display: block;
+		text-align: center;
+	}
+	.main-nav ul li a {
+		padding: 15px;
+	}
+	.open-menu {
+		.main-header .main-nav {
+			display: block;
+		}
+		.main-nav-btn {
+			> div {
+				position: relative;
+				&:nth-child(1) {
+					top: 5px;
+					.rotate(45deg);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+				}
+				&:nth-child(3) {
+					top: -7px;
+					.rotate(-45deg);
+				}
+			}
+		}
+	}
+}
+@media (max-width: 359px) {
+	.main-width {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.main-header .logo {
+		left: 15px;
+	}
+	.main-nav-btn {
+		padding: 24px 15px;
+		width: 50px;
 	}
 }

@@ -93,6 +93,14 @@ $(document).ready(function(){
 		$('html').toggleClass('open-menu');
 	});
 
+	$('.down').click(function(){
+		var scrollDown = $('.bg-large-img').offset().top - 70;
+		$('html, body').animate({
+			scrollTop: scrollDown
+		}, '400');
+		return false 
+	});
+
 
 });
 

@@ -1580,6 +1580,9 @@ h6,
   font-size: 15px;
   text-decoration: none;
 }
+.main-nav ul li a:hover {
+  color: #2c4d19;
+}
 .socials {
   padding: 0;
   margin: 0 -7px 25px 0;
@@ -2290,7 +2293,7 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 999;
+  z-index: 1020;
   height: 100%;
   width: 100%;
   font-size: 0;
@@ -3261,6 +3264,9 @@ img {
   .cheers-img {
     top: auto;
     bottom: 220px;
+  }
+  .down {
+    display: none;
   }
 }
 @media (max-width: 599px) {

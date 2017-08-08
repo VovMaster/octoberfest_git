@@ -2419,14 +2419,16 @@ img {
 }
 .img-left-position-footer {
   position: absolute;
-  bottom: -19px;
-  left: 52px;
+  bottom: -30px;
+  left: 17px;
+  right: 0;
   z-index: 1;
 }
 .img-right-position-footer {
+  bottom: -40px;
+  left: -13px;
   position: absolute;
-  bottom: -37px;
-  left: -24px;
+  right: -19px;
   z-index: 1;
 }
 .section-content {
@@ -2583,8 +2585,9 @@ img {
   left: 50%;
   margin-left: -486px;
   position: absolute;
-  top: 998px;
+  bottom: 373px;
   width: 1034px;
+  top: auto;
 }
 .octroberfest-text {
   position: absolute;
@@ -2610,6 +2613,15 @@ img {
   margin-left: -1000px;
   margin-right: -1000px;
 }
+@media (min-width: 1281px) {
+  .bg-large-img > div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .bg-large-img img {
+    width: 100%;
+  }
+}
 .down {
   background-image: url(../images/down.png);
   background-repeat: no-repeat;
@@ -2621,7 +2633,8 @@ img {
 }
 .form-arrow-big {
   width: 402px;
-  top: 1350px;
+  bottom: 323px;
+  top: auto;
   margin-left: -201px;
   box-shadow: 9px 9px 27px 25px rgba(115, 93, 72, 0.5);
 }
@@ -2631,6 +2644,14 @@ img {
 }
 .form-arrow-big button {
   width: 67px;
+}
+@media (min-width: 1381px) {
+  .form-arrow-big {
+    margin-bottom: 10%;
+  }
+  .cheers-img {
+    margin-bottom: 20%;
+  }
 }
 .featuring-index {
   position: relative;
@@ -2823,6 +2844,7 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 0;
   padding-top: 98px;
+  padding-bottom: 98px;
 }
 .section-music-index .title {
   margin-bottom: 162px;
@@ -2964,7 +2986,7 @@ img {
   .section-the-kultur-of,
   .fixed-header,
   .section-music-index {
-    background-size: 100% auto;
+    background-image: url(../images/main-bg-2.jpg);
   }
 }
 .btn-ticket {
@@ -3260,6 +3282,7 @@ img {
   .section-music-index {
     background-image: none;
     padding-top: 67px;
+    padding-bottom: 67px;
   }
   .section-music-index {
     min-height: 100px;

@@ -164,6 +164,9 @@ img{
 	float: right;
 	padding: 82px 69px 74px;
 	line-height: 29px;
+	p {
+		min-height: 29px;
+	}
 }
 .img-column {
 	position: absolute;
@@ -173,7 +176,6 @@ img{
 	overflow: hidden;
 	bottom: 0;
 	img {
-		max-width: 500%;
 		min-width: 100%;
 		min-height: 100%;
 	}
@@ -303,6 +305,10 @@ img{
 	.title {
 		margin-bottom: 18px;
 	}
+}
+.section-die-deets-content {
+	max-width: 800px;
+	margin: auto;
 }
 
 .section-the-kultur-of {
@@ -1153,6 +1159,9 @@ img{
 	}
 	.featuring-item a::after {
 		right: -24px;
+	}
+	.text-column p {
+		min-height: 0;
 	}
 }
 @media (max-width: 1010px) {

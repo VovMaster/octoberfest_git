@@ -2090,6 +2090,9 @@ img {
   padding: 82px 69px 74px;
   line-height: 29px;
 }
+.text-column p {
+  min-height: 29px;
+}
 .img-column {
   position: absolute;
   width: 50%;
@@ -2099,7 +2102,6 @@ img {
   bottom: 0;
 }
 .img-column img {
-  max-width: 500%;
   min-width: 100%;
   min-height: 100%;
 }
@@ -2217,6 +2219,10 @@ img {
 }
 .section-die-deets .title {
   margin-bottom: 18px;
+}
+.section-die-deets-content {
+  max-width: 800px;
+  margin: auto;
 }
 .section-the-kultur-of {
   background-color: #40d5fd;
@@ -3033,6 +3039,9 @@ img {
   }
   .featuring-item a::after {
     right: -24px;
+  }
+  .text-column p {
+    min-height: 0;
   }
 }
 @media (max-width: 1010px) {

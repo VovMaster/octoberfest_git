@@ -326,7 +326,8 @@ h1 {
   margin: .67em 0;
   font-size: 100px;
 }
-h2 {
+h2,
+.h2 {
   font-size: 80px;
   line-height: 72px;
 }
@@ -2220,10 +2221,12 @@ img {
   margin-top: 0;
   font-size: 31px;
 }
-.title h5 + h2 {
+.title h5 + h2,
+.title h5 + .h2 {
   margin-top: 3px;
 }
-.title h2 {
+.title h2,
+.title .h2 {
   margin-top: 5px;
 }
 .border-img {
@@ -2278,7 +2281,8 @@ img {
   margin-bottom: 37px;
   font-size: 0;
 }
-.main-title h2 {
+.main-title h2,
+.main-title .h2 {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
@@ -2437,7 +2441,8 @@ img {
 .section-content p {
   margin-bottom: 28px;
 }
-.section-content h2 {
+.section-content h2,
+.section-content .h2 {
   font-size: 50px;
   line-height: normal;
   margin-top: 34px;
@@ -2769,7 +2774,8 @@ img {
 .section-dress-up-index {
   padding-top: 157px;
 }
-.section-dress-up-index .title h2 {
+.section-dress-up-index .title h2,
+.section-dress-up-index .title .h2 {
   font-family: 'lulo_cleanone_bold';
   font-weight: normal;
 }
@@ -2821,7 +2827,8 @@ img {
 .section-music-index .title {
   margin-bottom: 162px;
 }
-.section-music-index .title h2 {
+.section-music-index .title h2,
+.section-music-index .title .h2 {
   color: #fff;
   font-family: 'lulo_cleanone_bold';
   font-weight: normal;
@@ -3210,7 +3217,8 @@ img {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  h2 {
+  h2,
+  .h2 {
     font-size: 62px;
     line-height: 62px;
   }
@@ -3220,7 +3228,8 @@ img {
   .border-img {
     margin-top: 30px;
   }
-  .section-content h2 {
+  .section-content h2,
+  .section-content .h2 {
     font-size: 42px;
     margin-top: 0;
     margin-bottom: 30px;
@@ -3325,7 +3334,9 @@ img {
     font-size: 20px;
   }
   h2,
-  .section-content h2 {
+  .section-content h2,
+  .h2,
+  .section-content .h2 {
     font-size: 32px;
     line-height: 32px;
   }

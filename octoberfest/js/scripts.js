@@ -33,9 +33,13 @@ $(document).ready(function(){
 
 	var anc = window.location.hash;
 
+	// alert(anc);
+
 	if (anc.length  > 0 && anc != '#form-sign') {
 		if($(window).width() > 767) {
+			setTimeout(function() {
 			$('html, body').scrollTop( $(anc).offset().top  - 100) ;
+			}, 200);
 		
 		}
 	}

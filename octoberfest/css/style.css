@@ -2865,6 +2865,9 @@ img {
 .section-dress-up-index a:not(.btn) {
   color: #40d5fd;
 }
+.section-dress-up a:not(.btn) {
+  color: #31591b;
+}
 .section-dress-up-index .title {
   margin-bottom: 66px;
 }
@@ -3098,6 +3101,11 @@ img {
 .btn-ticket.btn-ticket-open {
   margin-top: 0;
 }
+.images-three img {
+    width: 33.33% !important;
+    float: left;
+  
+}
 @media (max-width: 1200px) {
   .section-dress-up-index .img-left-position {
     left: -190px;
@@ -3282,8 +3290,16 @@ img {
   .main-header {
     height: 70px;
     padding: 20px 0;
-    position: relative;
+    position: fixed;
     z-index: 1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../images/main-bg.jpg");
+    background-position: 50% 0;
+  }
+  .wrapper {
+    padding-top: 70px;
   }
   .main-header .main-nav {
     padding: 30px 0;
